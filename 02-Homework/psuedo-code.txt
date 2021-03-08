@@ -1,0 +1,16 @@
+Display current day at the top of the calendar.
+
+Standard business hours are apart of the day planner.
+
+All past hours are colored gray.
+
+Present hour is colored red.
+
+All future hours colored green.
+
+Able to input events in each time block.
+
+When clicking the save button the data will be stored to local storage.
+
+When page refreshes the data stored perists
+
