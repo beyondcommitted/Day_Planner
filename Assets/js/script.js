@@ -17,9 +17,9 @@ $("#2oclock").attr("data-time", moment("2:00 pm", "h:mm a").format("HH"));
 $("#3oclock").attr("data-time", moment("3:00 pm", "h:mm a").format("HH"));
 $("#4oclock").attr("data-time", moment("4:00 pm", "h:mm a").format("HH"));
 $("#5oclock").attr("data-time", moment("5:00 pm", "h:mm a").format("HH"));
-
- 
-
+// renders the values set in the local storage to the page
+  $(document).ready(function() {
+renderSchedule();
 //   applies the date in text to the p tag(top of the page) with the id of presentDay
   var presentDay = moment().format("LLLL");
   document.getElementById("presentDay").innerHTML = presentDay;
@@ -40,20 +40,12 @@ $("#5oclock").attr("data-time", moment("5:00 pm", "h:mm a").format("HH"));
       $("#" + i + "oclock").addClass("future");
     }
   }
-
-  saveButton.on("mouseenter", function () {
-    $(this).addClass("saveBtn");
-  });
-
-  saveButton.on("mouseleave", function () {
-    $(this).removeClass("saveBtn");
-  });
-
+// Listens for the click of the save button
   saveButton.on("click", function () {
-    // variable to select an attribute in HTML
+    // variable that will select hourBLock as the key
     var hourBlock = $(this).attr("data-hour");
 
-    // variable that will select that hourBlock/timeBlock input as a value
+    // variable that will be the value of the input 
     var event = $("#" + hourBlock + "oclock").val();
 
     // save that value in hourBlock/timeBlock as the users event to local storage
@@ -65,7 +57,14 @@ $("#5oclock").attr("data-time", moment("5:00 pm", "h:mm a").format("HH"));
     for (var j = 1; j <= 12; j++) {
       $("#" + j + "oclock").val(localStorage.getItem(j));
     }
-    
-  }
+  
+  saveButton.on("mouseenter", function () {
+    $(this).addClass("saveBtn");
+  });
+
+  saveButton.on("mouseleave", function () {
+    $(this).removeClass("saveBtn");
+  });
+  }});
   
 
