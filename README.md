@@ -28,4 +28,4 @@ WHEN user refreshes the page
 THEN the saved events persist
 ```
 ## Mock up
-![Day-Planner Demo](Assets\images\Day-Planner-Screenshot.png)
+![Day-Planner Demo](https://raw.githubusercontent.com/beyondcommitted/Day_Planner/main/Assets/images/Day-Planner-Screenshot.png)
