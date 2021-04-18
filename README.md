@@ -12,8 +12,8 @@ The daily planner will let the user know which hour is past, present or future.
 This will help any user stay organized and keep track of their day.
 ```
 Below are links to the deployed site and my GitHub repository<br>
- https://beyondcommitted.github.io/Day_Planner/index.html<br>
- https://github.com/beyondcommitted/Day_Planner<br>
+ ## [GitHub](https://github.com/beyondcommitted/Day_Planner)<br>
+ ## [Deployment](https://beyondcommitted.github.io/Day_Planner/index.html)<br>
 
 ## Acceptance Criteria Met
 ```
